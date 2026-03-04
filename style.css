@@ -1,0 +1,30 @@
+body{
+    background-color: #1F877C;
+
+}
+
+@font-face {
+  font-family: "MasterofCustom";
+  src: url("./Fonts/MasterofCustom.ttf") format("truetype");
+}
+
+
+h1{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+
+
+h3{
+    color: white;
+    src: url(./Fonts/MasterofCustom.ttf) format("truetype");
+    font-family: "MasterofCustom";
+    font-style: italic;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+    
+}
