@@ -1,3 +1,8 @@
+/* Main Page */
+
+
+
+
 body{
     background-color: #1F877C;
 
@@ -45,7 +50,7 @@ div {
     border-radius: 15%;
     border: white;
     padding: 12px 20px;
-    display: flex;
+    
 
 }
 
@@ -55,5 +60,15 @@ footer{
     position: fixed;
     bottom: 20px;
     right: 15px;
+
+}
+
+
+
+/* Calorie Tracker */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 
 }
