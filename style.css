@@ -37,6 +37,7 @@ div {
 }
 
 
+
 .buttons button{
     background-color: rgb(4, 217, 255);
     color: white;
@@ -44,5 +45,15 @@ div {
     border-radius: 15%;
     border: white;
     padding: 12px 20px;
-    cursor: pointer;
+    display: flex;
+
+}
+
+
+footer{
+
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+
 }
