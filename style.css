@@ -28,3 +28,21 @@ h3{
     text-align: center;
     
 }
+
+
+div {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+
+.buttons button{
+    background-color: rgb(4, 217, 255);
+    color: white;
+    margin: 10px;
+    border-radius: 15%;
+    border: white;
+    padding: 12px 20px;
+    cursor: pointer;
+}
