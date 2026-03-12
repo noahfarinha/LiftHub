@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>BMI Calculator</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-    
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 
-     <script src="./JS/BMIcalculator.js"></script>
-
-    <h1>BMI Calculator</h1>     
-    <h2 > BMI (Body Mass Index) is a simple number used to estimate whether a person has a healthy body weight for their height.</h2>
-
+    <!-- JS -->
+    <script src="./JS/BMIcalculator.js" defer></script>
 </head>
+
+<body>
+    <h1>BMI Calculator</h1>     
+    <h2>BMI (Body Mass Index) is a simple number used to estimate whether a person has a healthy body weight for their height.</h2>
+
+    <label for="weight">Weight (kg):</label>
+    <input type="number" id="weight" step="0.1"><br><br>
+
+    <label for="height">Height (m):</label>
+    <input type="number" id="height" step="0.01"><br><br>
+
+    <button onclick="bmiCalculator()">Calculate BMI</button>
+
+    <p id="bmiResult"></p>
+</body>
+</html>
