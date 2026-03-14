@@ -1,9 +1,17 @@
 /* Main Page */
 
+.hero {
+  background-image: url("./Pictures/background.jpg");
+  background-size: cover;      /* fills container without distortion */
+  background-position: center; /* keeps main subject centered */
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
 
 
 body{
-    background-color: #1F877C;
+    background-color: #010403;
     
 
 }
@@ -34,6 +42,8 @@ h3{
     letter-spacing: 2px;
     font-weight: normal;
     text-align: center;
+    position: absolute;
+    top: 150px;
     
 }
 
@@ -54,29 +64,79 @@ h3{
 
 footer{
 
+    color: white;
     position: fixed;
     bottom: 20px;
     right: 15px;
 
 }
 
-/* NAV BAR */
+/* NAV BAR INDEX PAGE*/
 
-ul {
-    text-decoration: none;
-    color: aliceblue;
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding: 0;
+.navbarindex{
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* center links horizontally */
+  padding: 10px 20px;
+  z-index: 100; 
+  top: 300px;           
+}
 
-    
-    
+.navbarindex ul {
+  list-style: none;       
+  margin: 0;
+  padding: 0;
+  display: flex;          
+  flex-direction: row;    
+}
+
+.navbarindex li {
+  margin-right: 20px;  /* space between links */
+}
+
+.navbarindex a {
+  color: white;          
+  text-decoration: none;  
+  padding: 0 15px;       
 }
 
 
+/* NAV BAR OTHER PAGES */
 
-/* Calorie Tracker */
+.navbar{
+  font-size: 25px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* center links horizontally */
+  padding: 10px 20px;
+  z-index: 100; 
+  top: 100px;         
+}
+
+.navbar ul {
+  list-style: none;       
+  margin: 0;
+  padding: 0;
+  display: flex;          
+  flex-direction: row;    
+}
+
+.navbar li {
+  margin-right: 20px;  /* space between links */
+}
+
+.navbar a {
+  color: white;          
+  text-decoration: none;  
+  padding: 0 15px;       
+}
+
+/* Calorie Tracker PAGE */
 
 .CT-container {
     position:absolute;
@@ -97,7 +157,7 @@ ul {
 }
 
 
-/* BMI Calculator */
+/* BMI Calculator PAGE */
 
 img {
     height: 200px;
@@ -107,7 +167,7 @@ img {
 }
 
 
-/* CALCULATORS */
+/* CALCULATORS PAGE */
 
 .CALCButtons{
 
