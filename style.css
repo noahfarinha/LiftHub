@@ -85,3 +85,13 @@ footer{
     text-align: center;
 
 }
+
+
+/* BMI Calculator */
+
+img {
+    height: 200px;
+    position: absolute;
+    top:350px;
+    left: 550px;
+}
