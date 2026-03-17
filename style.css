@@ -8,7 +8,30 @@
   height: 100vh;
 }
 
+.hero > h3{
+    color: white;
+    src: url(./Fonts/MasterofCustom.ttf) format("truetype");
+    font-family: "MasterofCustom";
+    font-style: italic;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
 
+.about > h3{
+    color: white;
+     font-family: "MasterofCustom";
+    font-style: italic;
+    font-size: xx-large;
+    letter-spacing: 2px;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 150px;
+}
 
 body{
     background-color: #010403;
@@ -35,8 +58,6 @@ h2{
 
 h3{
     color: white;
-    src: url(./Fonts/MasterofCustom.ttf) format("truetype");
-    font-family: "MasterofCustom";
     font-style: italic;
     font-size: xx-large;
     letter-spacing: 2px;
