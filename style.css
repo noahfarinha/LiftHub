@@ -1,11 +1,17 @@
-/* Main Page */
+/* Index Page */
 
 .hero {
   background-image: url("./Pictures/background.jpg");
-  background-size: cover;      /* fills container without distortion */
-  background-position: center; /* keeps main subject centered */
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+
+  position: fixed;   /* KEY FIX */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;       /* puts it behind everything */
 }
 
 .hero > h3{
@@ -19,25 +25,30 @@
     text-align: center;
     position: absolute;
     top: 150px;
+    left: 525px;
 }
 
-.about > h3{
+/* About Page */
+
+
+.about-text {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 20px;              
+    max-width: 800px;
+    margin: 150px auto 0 auto; 
+    text-align: center;
+}
+
+.about-text p {
     color: white;
-     font-family: "MasterofCustom";
     font-style: italic;
     font-size: xx-large;
     letter-spacing: 2px;
-    font-weight: normal;
-    text-align: center;
-    position: absolute;
-    top: 150px;
 }
 
-body{
-    background-color: #010403;
-    
 
-}
 
 @font-face {
   font-family: "MasterofCustom";
@@ -54,17 +65,23 @@ h1{
 h2{
     color: white;
     text-align: center;
+    position: absolute;
+    top: 650px;
+    left: 220px;
 }
 
 h3{
     color: white;
     font-style: italic;
-    font-size: xx-large;
+    font-size:350%;
     letter-spacing: 2px;
     font-weight: normal;
     text-align: center;
     position: absolute;
-    top: 150px;
+    top: 250px;
+    left: 300px;
+    font-family: "MasterofCustom";
+    src: url("./Fonts/MasterofCustom.ttf") format("truetype");
     
 }
 
@@ -103,7 +120,7 @@ footer{
   justify-content: center;   /* center links horizontally */
   padding: 10px 20px;
   z-index: 100; 
-  top: 300px;           
+  top: 100px;           
 }
 
 .navbarindex ul {
@@ -174,6 +191,7 @@ footer{
 
 .CT {
     text-align: center;
+    color: white;
 
 }
 
@@ -183,22 +201,58 @@ footer{
 img {
     height: 200px;
     position: absolute;
-    top:350px;
+    top:450px;
     left: 550px;
+}
+
+.bmi-container {
+    color: white;
+    font-size: medium;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    justify-content: center;                 
+    margin-top: 170px;       
+}
+
+.bmiCalculator {
+    position: absolute;
+    gap: 20px;
 }
 
 
 /* CALCULATORS PAGE */
 
-.CALCButtons{
 
-    background-color: rgb(4, 217, 255);
-    color: white;
-    margin: 10px;
-    border-radius: 15%;
-    border: white;
-    padding: 12px 20px;
+
+.CALCButtons button {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    top: 250px;
+    margin: 100px auto 0 auto;  
+    gap: 20px;
+    background: linear-gradient(135deg, #04d9ff, #00aaff);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 30px; /* smooth rounded */
+    cursor: pointer;
+    
+    transition: all 0.3s ease; /* smooth animation */
+    
+    box-shadow: 0 4px 15px rgba(0, 217, 255, 0.4);
+}
 
+/* Hover effect */
+.CALCButtons button:hover {
+    transform: translateY(-3px); /* lifts button */
+    box-shadow: 0 8px 25px rgba(0, 217, 255, 0.7);
+    background: linear-gradient(135deg, #00c3ff, #0077ff);
+}
+
+/* Click effect */
+.CALCButtons button:active {
+    transform: scale(0.95);
 }
