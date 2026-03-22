@@ -1,5 +1,26 @@
-LiftHub is my first web development project. As someone passionate about fitness and well-being, I wanted to build a website focused on workouts, calories, and the benefits of staying active.
+# LiftHub
 
-This project includes features like a BMI calculator, workout planning pages, and exercise-related content. It’s built using HTML and CSS to practice front-end development skills.
+LiftHub is a fitness-focused web application designed to help users track health metrics and explore workout-related content.
 
-In the future, I plan to improve the design and add more functionality.
+## Features
+- BMI calculator to assess body health
+- Calorie tracking functionality
+- Responsive navigation and multi-page layout
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript (basic interactivity)
+
+## Purpose
+This project was built to develop front-end development skills and apply core web concepts such as layout design, user input handling, and basic calculations.
+
+## Future Improvements
+- Add more advanced JavaScript functionality
+- Improve UI/UX design
+- Implement data storage (e.g., localStorage or backend)
+- Expand fitness tracking features
+- Workout planning and fitness information
+
+## Author
+Noah Farinha
