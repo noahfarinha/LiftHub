@@ -256,3 +256,18 @@ img {
 .CALCButtons button:active {
     transform: scale(0.95);
 }
+
+
+
+/* Contact Me page */
+
+form{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    gap: 20px;
+    top: 200px;
+    left: 800px;
+}
