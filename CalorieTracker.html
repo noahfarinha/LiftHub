@@ -9,14 +9,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
-
-    <h1>Calorie Tracker</h1>     
+    <script src="./JS/CalorieTracker.js "></script>   
 
 </head>
 
 <body>
-<body>
-
+<h1>Calorie Tracker</h1> 
    <!-- Hero Section -->
 <section class="hero"></section>
    <!-- NAV BAR -->
@@ -33,17 +31,22 @@
 </body>
    <div class="CT-container">
     <div class="CT">
-        
-        <label>How much do you weigh?</label>
-        <input type="number">
+     
+        <label>Weight (kg)</label>
+        <input type="number" id="weight">
 
-        <label>What's your height?</label>
-        <input type="number">
+        <label>Height (cm)</label>
+        <input type="number" id="height">
 
-        <label>Do you wanna bulk or cut?</label>
-        <input type="text">
+        <label>Age</label>
+        <input type="number" id="age">
 
-        <button>Calculate</button>
+        <label>Goal (bulk or cut)</label>
+        <input type="text" id="goal">
+
+        <button onclick="calculateCalories()">Calculate</button>
+
+        <p id="result"></p>
     </div>
 
 </div>
